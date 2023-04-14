@@ -1,0 +1,302 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url('Itim-Regular.ttf');
+}
+html{
+  background-color: rgba(0,0,0,0.9);
+}
+
+.header{
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 15px;
+  align-content: space-between;
+  padding: 14px;
+  position: fixed;
+  top:0;
+  right:0;
+  left:0;
+  z-index:5;
+  right:0;
+}
+.item1{
+  color: white ;
+font-size:18px;
+  padding:2px;
+  font-family: myFont;
+  
+}
+.buy,.mode{
+  border:1px solid white;
+  text-align: center;
+}
+
+.mode{
+font-size:13px;
+}
+.item2{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-gap: 15px;
+  padding: 15px;
+  position: fixed;
+  top:55px;
+  z-index: 5;
+  left:0;
+  right:0;
+}
+
+.head{
+ font-family: myFont;
+ 
+  background-color: black;
+  color: white;
+}
+.head span{
+  display: inline-block;
+  font-size: 19px;
+}
+
+.title{
+  height:80px;
+  width: 100%;
+  z-index: 3;
+  padding:5px; 
+  background-color: #000033;
+  position: relative;
+  top:100px;
+  
+}
+.title p{
+  padding:5px;
+  text-align: center;
+  display:inline-block;
+  font-size: 10px;
+  font-family: myFont;
+  color: white;
+}
+
+.title p::after {
+  width:10px;
+  border:1px solid deeppink;
+  border-radius: 50%;
+  height:10px;
+  padding: 5px;
+  position: relative;
+  z-index: 4;
+  
+  background-color: deeppink;
+  content: "✅";
+  display: inline-block;
+  
+  
+}
+.title img{
+  height:50px;
+  
+  
+  width:50px;
+  border:1px solid black;
+  border-radius: 50%;
+  float: left;
+}
+.post{
+  width:100%;
+  height:300px;
+  position: relative;
+  background-color: white;
+  
+  
+}
+.post #posttitle{
+  color:red;
+  text-align: center ;
+  position: relative;
+  top:140px;
+  font-size: 20px;
+  padding: 15px;
+  font-family: myFont;
+}
+
+.btns{
+  display: flex;
+  flex-wrap: wrap ;
+  background-color:#000033; 
+  
+}
+button{
+  flex:20%;
+  padding:10px;
+  margin:10px;
+  border:1px solid blueviolet ;
+  border-radius: 19px;
+  color: white;
+  background-color:blueviolet;
+  font-family: myFont;
+}
+.comments{
+  padding:10px;
+  margin-top:40px;
+  
+  
+  height:100px;
+}
+.comments img{
+  height:50px;
+  width:50px;
+  
+  border:1px solid black;
+  border-radius: 50%;
+  float: left;
+}
+.comments .usercomment{
+  float:right;
+  color:white;
+  margin:5px;
+  height:auto;
+  
+  width:80%;
+  font-size: 14px;
+  height:auto;
+  border:1px solid #ddd;
+  border-radius:10px; 
+  font-family:myFont;
+  padding:8px;
+  padding-top:4px;
+  background-color: rgba(0,20,30,0.8);
+  
+  
+}
+.sect1{
+  position: relative;
+}
+.footer{
+  height: 60px;
+  width:100%;
+  position: fixed;
+  bottom:0;
+  right:0;
+  left:0;
+  margin-top:40px;
+  background-color: rgba(0,0,0,0.9);;
+  
+  
+}
+input[type=text]{
+  width:90%;
+  padding:10px;
+  border:1px solid lightgrey;
+  border-radius: 17px;
+  margin:10px;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0,20,30,0.8);
+  font-family: myFont;
+  outline:none;
+}
+@media screen and (min-width:788px){
+  .header {
+    grid-template-columns: auto auto auto ;
+    padding: 15px;
+    position:relative;
+  }
+  .item1{
+    font-size: 30px;
+    padding: 10px;
+    
+  }
+  .item2{
+    position: relative;
+    top:0;
+    grid-template-columns: auto;
+    text-align:center;
+    font-size: 40px;
+    padding:35px;
+  }
+  
+  .title{
+    position: relative;
+    top:0;
+  }
+  .title p{
+    font-size: 25px;
+  }
+  .post #posttitle{
+  color:red;
+  text-align: center ;
+  position: absolute;
+  top:50%;
+  left:10%;
+  font-size: 40px;
+  padding: 15px;
+  
+}
+
+.comments .usercomment{
+  
+  margin:5px;
+  height:auto;
+  
+  width:80%;
+  font-size: 30px;
+  height:auto;
+  
+  padding:19px;
+  padding-top:4px;
+  
+  
+  
+}
+input[type=text]{
+  width:80%;
+  padding:20px;
+  border:1px solid lightgrey;
+  border-radius: 17px;
+  margin-top:20px;
+  color: white;
+  font-size: 28px;
+  background-color: rgba(0,20,30,0.8);
+  font-family: myFont;
+  outline:none;
+  
+}
+.footer{
+  height:150px;
+  position: relative ;
+  
+}
+button{
+  font-size: 30px;
+}
+.comments{
+  height:180px;
+}
+.comments img{
+  height:80px;
+  width:80px;
+  
+  
+}
+.title p::after {
+  width:30px;
+  border:1px solid deeppink;
+  border-radius: 50%;
+  height:30px;
+  padding: 5px;
+  position: relative;
+  z-index: 4;
+  
+  background-color: deeppink;
+  content: "✅";
+  display: inline-block;
+  
+  
+}
+}
